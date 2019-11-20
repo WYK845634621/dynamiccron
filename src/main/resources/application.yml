@@ -1,0 +1,12 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: liujinbang-temp
+  cloud:
+    zookeeper:
+      connectString: 10.253.46.47:2181
+      discovery:
+#        register: false
+        instanceHost: 127.0.0.1
+        instancePort: ${server.port}
